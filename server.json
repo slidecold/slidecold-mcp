@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.slidecold/slidecold-mcp",
+  "title": "SlideCold",
+  "description": "Instagram cold-DM outreach: campaigns, audiences, conversations, accounts and proxies.",
+  "repository": {
+    "url": "https://github.com/slidecold/slidecold-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://slidecold.com",
+  "version": "0.2.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "slidecold-mcp",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SLIDECOLD_API_KEY",
+          "description": "SlideCold API key (cs_...) from https://slidecold.com/settings",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
